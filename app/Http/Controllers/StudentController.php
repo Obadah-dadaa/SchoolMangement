@@ -82,9 +82,10 @@ class StudentController extends Controller
 //        }
     }
 
-    public function show(Student  $student)
+    public function show($id)
     {
-        return response()->json(new Message($student, '200', true, 'info', 'done', 'تم'));
+        $student=Student::find($id);
+        return view('Students.show',compact('student'));
     }
     public function edit($id,Student $students){
 

@@ -72,8 +72,11 @@ class UsersController extends Controller
         return redirect('/users');
 
     }
-    public function show(Request $request){ dd($request->all());}
-
+    public function show($id)
+    {
+        $user=User::find($id);
+        return view('Users.show',compact('user'));
+    }
 
     public function destroy($id)
     {

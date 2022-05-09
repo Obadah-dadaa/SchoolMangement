@@ -82,9 +82,10 @@ public function create(){
 //        }
     }
 
-    public function show(teacher  $teacher)
+    public function show($id)
     {
-        return response()->json(new Message($teacher, '200', true, 'info', 'done', 'تم'));
+        $teacher=Teacher::find($id);
+        return view('Teachers.show',compact('teacher'));
     }
     public function edit($id){
 

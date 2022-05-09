@@ -23,6 +23,13 @@
                     <input type="Email" name="Email" class="form-control" value="{{$user->email}}">
                 </div>
 
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="text" name="Password" class="form-control" value="{{$user->password}}">
+                </div>
+
+
 <div class="form-group">
 
     <button class="btn btn-success" type="submit">Update</button>

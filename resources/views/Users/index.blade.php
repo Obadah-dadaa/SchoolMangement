@@ -33,7 +33,8 @@
                             @endforeach
                             </td>
                             <td>
-                            <a href="/users/edit/{{$user->id}}" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="/users/edit/{{$user->id}}" class="btn btn-success btn-sm">Edit</a>
+                            <a href="/users/show/{{$user->id}}" class="btn btn-primary btn-sm">show</a>
                             <a class="btn btn-danger btn-sm" href="/users/delete/{{$user->id}}">Delete</a></td>
                         </tr>
                     @endforeach

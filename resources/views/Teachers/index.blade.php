@@ -30,8 +30,10 @@
                             <td>{{$teacher->role}}</td>
 
                             <td>
-                                <a href="{{route('teachers.edit',$teacher->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                            <a class="btn btn-danger btn-sm" href="/teachers/delete/{{$teacher->id}}">Delete</a></td>
+                                <a href="{{route('teachers.edit',$teacher->id)}}" class="btn btn-success btn-sm">Edit</a>
+                                <a href="/teachers/show/{{$teacher->id}}" class="btn btn-primary btn-sm">show</a>
+                                <a class="btn btn-danger btn-sm" href="/teachers/delete/{{$teacher->id}}">Delete</a></td>
+
 
                         </tr>
                     @endforeach

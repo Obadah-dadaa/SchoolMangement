@@ -30,8 +30,9 @@
                             <td>{{$student->section_id}}</td>
 
                             <td>
-                                <a href="{{route('students.edit',$student->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                            <a class="btn btn-danger btn-sm" href="/students/delete/{{$student->id}}">Delete</a></td>
+                                <a href="{{route('students.edit',$student->id)}}" class="btn btn-success btn-sm">Edit</a>
+                                <a href="/students/show/{{$student->id}}" class="btn btn-primary btn-sm">show</a>
+                                <a class="btn btn-danger btn-sm" href="/students/delete/{{$student->id}}">Delete</a></td>
 
                         </tr>
                     @endforeach
